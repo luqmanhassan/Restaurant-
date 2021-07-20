@@ -19,6 +19,15 @@ nav {
   justify-content: space-around;
   background-color: black;
   padding: 10px;
+  color: white;
+  div {
+    padding: 15px;
+  }
+  div:hover {
+    background: white;
+    cursor: pointer;
+    color: black;
+  }
 }
 
 main {

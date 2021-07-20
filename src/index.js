@@ -1,17 +1,5 @@
-/* 
-  
+import main_home from './comp1';
 
-      <div id="main__div">
-        <p>Best Somali Food In Seattle</p>
-        <p>Since 1970</p>
-        <img src="/images/cook.jpeg" />
-        <p>Order Online or Come Visit Us!</p>
-      </div>
-  
-
-    */
-
-// Header
 const content_div = document.getElementById('content');
 const header_tag = document.createElement('header');
 const h1_tag = document.createElement('h1');
@@ -32,30 +20,22 @@ for (let i = 0; i < 3; i++) {
 content_div.appendChild(nav_tag);
 
 // Main
+main_home();
 
-const main_tag = document.createElement('main');
-const maindiv_tag = document.createElement('div');
-let points = [
-  'Best Somali Food In Seattle',
-  'Since 1970',
-  'Order Online or Come Visit Us!',
-];
-
-for (let i = 0; i < 3; i++) {
-  let mainp_tag = document.createElement('p');
-  let mainp_textnode = document.createTextNode('' + points[i]);
-  mainp_tag.appendChild(mainp_textnode);
-  maindiv_tag.appendChild(mainp_textnode);
-  maindiv_tag.appendChild(mainp_tag);
+// Extra Nav Stuff
+let y = nav_tag.getElementsByTagName('div');
+let x = [home, menu, contact];
+for (let j = 0; j < 3; j++) {
+  y[j].addEventListener('click', x[j]);
 }
-const img_tag = document.createElement('img');
-img_tag.src = '/images/cook.jpeg';
-maindiv_tag.appendChild(img_tag);
 
-main_tag.appendChild(maindiv_tag);
-content_div.appendChild(main_tag);
-
-maindiv_tag.id = 'main__div';
+function home() {}
+function menu() {
+  console.log(maindiv_tag.back);
+  document.getElementById('main__div').style.display = 'none';
+  // maindiv_tag.style.display = 'none';
+}
+function contact() {}
 
 // Footer
 const footer_tag = document.createElement('footer');

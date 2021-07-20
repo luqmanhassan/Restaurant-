@@ -27,6 +27,16 @@ nav {
   color: white;
 }
 
+nav div {
+  padding: 15px;
+}
+
+nav div:hover {
+  background: white;
+  cursor: pointer;
+  color: black;
+}
+
 main {
   background-image: url("/images/somalifood.jpeg");
   background-repeat: no-repeat;
