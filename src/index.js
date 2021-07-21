@@ -1,4 +1,6 @@
 import main_home from './comp1';
+import main_menu from './comp2';
+import main_contact from './comp3';
 
 const content_div = document.getElementById('content');
 const header_tag = document.createElement('header');
@@ -29,13 +31,18 @@ for (let j = 0; j < 3; j++) {
   y[j].addEventListener('click', x[j]);
 }
 
-function home() {}
-function menu() {
-  console.log(maindiv_tag.back);
+function home() {
   document.getElementById('main__div').style.display = 'none';
-  // maindiv_tag.style.display = 'none';
+  main_home();
 }
-function contact() {}
+function menu() {
+  document.getElementById('main__div').style.display = 'none';
+  main_menu();
+}
+function contact() {
+  document.getElementById('main__div').style.display = 'none';
+  main_contact();
+}
 
 // Footer
 const footer_tag = document.createElement('footer');

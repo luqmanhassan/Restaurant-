@@ -81,4 +81,11 @@ footer {
   text-align: center;
   text-decoration: underline;
 }
+
+button {
+  display: block;
+  background-color: white;
+  font-size: 30px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
