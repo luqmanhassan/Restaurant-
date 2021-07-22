@@ -27,7 +27,7 @@ function main_menu() {
   main_tag.appendChild(maindiv_tag);
   content_div.appendChild(main_tag);
 
-  maindiv_tag.id = 'main__div';
+  maindiv_tag.id = 'main__div_2';
 }
 
 export default main_menu;

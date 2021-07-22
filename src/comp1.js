@@ -21,8 +21,8 @@ function main_home() {
 
   main_tag.appendChild(maindiv_tag);
   content_div.appendChild(main_tag);
+  // content_div.insertBefore(main_tag, footer_tag);
 
   maindiv_tag.id = 'main__div';
 }
-
 export default main_home;

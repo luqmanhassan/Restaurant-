@@ -24,7 +24,7 @@ function main_contact() {
   main_tag.appendChild(maindiv_tag);
   content_div.appendChild(main_tag);
 
-  maindiv_tag.id = 'main__div';
+  maindiv_tag.id = 'main__div_3';
 }
 
 export default main_contact;
