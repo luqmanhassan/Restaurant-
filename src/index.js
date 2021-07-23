@@ -21,31 +21,38 @@ for (let i = 0; i < 3; i++) {
   nav_tag.appendChild(div_tag);
 }
 content_div.appendChild(nav_tag);
-//--------------------------------
-// Main
-main_home();
 
-// Extra Nav Stuff
 let y = nav_tag.getElementsByTagName('div');
 let x = [home, menu, contact];
 for (let j = 0; j < 3; j++) {
   y[j].addEventListener('click', x[j]);
 }
 
+//--------------------------------
+// Main
+const main_tag = document.createElement('main');
+content_div.appendChild(main_tag);
+main_tag.id = '_mainTag';
+
+main_home();
+main_menu();
+main_contact();
+
+document.getElementById('main__div_2').style.display = 'none';
+document.getElementById('main__div_3').style.display = 'none';
+
+// Extra Nav Stuff
 function home() {
-  main_home();
   document.getElementById('main__div').style.display = 'block';
   document.getElementById('main__div_2').style.display = 'none';
   document.getElementById('main__div_3').style.display = 'none';
 }
 function menu() {
-  main_menu();
   document.getElementById('main__div').style.display = 'none';
   document.getElementById('main__div_2').style.display = 'block';
   document.getElementById('main__div_3').style.display = 'none';
 }
 function contact() {
-  main_contact();
   document.getElementById('main__div').style.display = 'none';
   document.getElementById('main__div_2').style.display = 'none';
   document.getElementById('main__div_3').style.display = 'block';

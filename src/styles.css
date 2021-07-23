@@ -51,24 +51,27 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 600px;
 }
 
-#main__div {
+main div {
   background-color: rgba(0, 0, 0, 0.3);
   border: 5px solid black;
   border-radius: 10px;
   padding: 50px;
   margin: 100px;
+  width: 500px;
+  height: 400px;
 }
 
-#main__div p {
+main div p {
   text-align: center;
   font-size: 20px;
   color: white;
   margin: 10px;
 }
 
-#main__div img {
+main div img {
   display: block;
   margin: 0px auto;
   width: 200px;

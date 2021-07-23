@@ -1,8 +1,8 @@
 function main_menu() {
-  const content_div = document.getElementById('content');
-  const main_tag = document.createElement('main');
-  const maindiv_tag = document.createElement('div');
-  // maindiv_tag.id = 'maindiv';
+  const x = document.getElementById('_mainTag');
+  const maindiv_tag_2 = document.createElement('div');
+  maindiv_tag_2.id = 'main__div_2';
+
   let points = [
     'Basto & Chicken Suqar',
     'Basto & Beef Suqar',
@@ -16,18 +16,10 @@ function main_menu() {
     let mainbutton_tag = document.createElement('button');
     let mainbutton_textnode = document.createTextNode(points[i]);
     mainbutton_tag.appendChild(mainbutton_textnode);
-    maindiv_tag.appendChild(mainbutton_textnode);
-    maindiv_tag.appendChild(mainbutton_tag);
+    maindiv_tag_2.appendChild(mainbutton_tag);
   }
-  /*
-  const img_tag = document.createElement('img');
-  img_tag.src = '/images/cook.jpeg';
-  maindiv_tag.appendChild(img_tag);
-*/
-  main_tag.appendChild(maindiv_tag);
-  content_div.appendChild(main_tag);
 
-  maindiv_tag.id = 'main__div_2';
+  x.appendChild(maindiv_tag_2);
 }
 
 export default main_menu;
